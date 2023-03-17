@@ -18,7 +18,7 @@ int main() {
   float USDtoJPY; // stores the converted USD->JPY;
   float USDtoRMB; // stores the converted USD->RMB;
   float ounceToPounds; // stores the converted Ounce->Pounds;
-  float gramsToPounds; // stores the vonerted Grams->Pounds;
+  
   
   printf("Welcome to Unit Converter! \n");
   printf("Here is a list of conversation to choose from: \n");
@@ -67,35 +67,5 @@ int main() {
           USDtoJPY = userinputUSDtoJPY * 111.09;
           printf("JPY: %.2f",USDtoJPY);
       }
-      else if(currencyChoice == 3) {
-        printf("Please enter the USD amount: \n");
-        scanf("%d",&userinputUSDtoRMB);
-        USDtoRMB = userinputUSDtoRMB * 6.82;
-        printf("RMB: %.2f",USDtoRMB);
-      }
-      else
-        printf("Please enter correct choice. \n");
-   }
-  else if(category == 'M'){
-      printf("Welcome to Mass Converter! \n");
-      printf("Here is a list of conversations to choose from: \n");
-      printf("Enter 1 for ounces to pounds. \n");
-      printf("Enter 2 for gram to pounds. \n");
-      scanf("%d",&massChoice);
-      if(massChoice == 1){
-          printf("Please enter the ounce amount: \n");
-          scanf("%d",&userinputOunce);
-          ounceToPounds = userinputOunce * 0.0625;
-          printf("Pounds: %.2f",ounceToPounds);
-      }
-      else if(massChoice == 2) {
-          printf("Please enter the gram amount: \n");
-          scanf("%d",&userinputGram);
-          gramsToPounds = userinputGram * 0.00220462;
-          printf("Pounds: %.2f",gramsToPounds);
-      }
-      else 
-        printf("Please enter the correct choice. \n");
-   }
-  return 0;
-}
+      
+ 
