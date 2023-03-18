@@ -66,6 +66,9 @@ int main() {
           scanf("%d",&userinputUSDtoJPY);
           USDtoJPY = userinputUSDtoJPY * 111.09;
           printf("JPY: %.2f",USDtoJPY);
+      
       }
+    return 0;
+  }
       
  
