@@ -12,8 +12,8 @@ int main() {
   int userinputUSDtoRMB; // User inputted for USD to RMB;
   int userinputOunce; // User inputted for Ounce;
   int userinputGram; // User inputted for Gram;
-  int fahrenheitToCelcius; // variable that stores the converted F->C;
-  int celciusToFahrenheit; // variable that stores the converted C->F;
+  int fahrenheitToCelsius; // variable that stores the converted F->C;
+  int celsiusToFahrenheit; // variable that stores the converted C->F;
   float USDtoEURO ; // varaible that stores the converted USD->EURO;
   float USDtoJPY; // stores the converted USD->JPY;
   float USDtoRMB; // stores the converted USD->RMB;
@@ -35,14 +35,14 @@ int main() {
       if(tempChoice == 1){
           printf("Please enter the Fahrenheit degree: \n");
           scanf("%d",&userinputF);
-          fahrenheitToCelcius =  ((userinputF-32) * (5.0/9.0));
-          printf("Celcius: %d",fahrenheitToCelcius);
+          fahrenheitToCelsius =  ((userinputF-32) * (5.0/9.0));
+          printf("Celsius: %d",fahrenheitToCelsius);
       }
       else if(tempChoice == 2){
-        printf("Please enter the Celcius degree: \n");
+        printf("Please enter the Celsius degree: \n");
         scanf("%d",&userinputC);
-        celciusToFahrenheit = ((9.0/5.0)*userinputC + 32);
-        printf("Fahrenheit: %d",celciusToFahrenheit);
+        celsiusToFahrenheit = ((9.0/5.0)*userinputC + 32);
+        printf("Fahrenheit: %d",celsiusToFahrenheit);
       }
       else
         printf("Please enter the correct choice. \n");
