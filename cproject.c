@@ -94,8 +94,7 @@ int main() {
           gramsToPounds = userinputGram * 0.00220462;
           printf("Pounds: %.2f",gramsToPounds);
       }
-      else 
-        printf("Please enter the correct choice. \n");
+      
    }
   return 0;
 }
