@@ -12,13 +12,15 @@ int main() {
   int userinputUSDtoRMB; // User inputted for USD to RMB;
   int userinputOunce; // User inputted for Ounce;
   int userinputGram; // User inputted for Gram;
+  float userinputKg; // User inputted for Kg;
   int fahrenheitToCelsius; // variable that stores the converted F->C;
   int celsiusToFahrenheit; // variable that stores the converted C->F;
   float USDtoEURO ; // varaible that stores the converted USD->EURO;
   float USDtoJPY; // stores the converted USD->JPY;
   float USDtoRMB; // stores the converted USD->RMB;
   float ounceToPounds; // stores the converted Ounce->Pounds;
-  float gramsToPounds; // stores the vonerted Grams->Pounds;
+  float gramsToPounds; // stores the converted Grams->Pounds;
+  float KgToPounds; // stores the converted Kg->Pounds;
   
   printf("Welcome to Unit Converter! \n");
   printf("Here is a list of conversation to choose from: \n");
@@ -79,8 +81,9 @@ int main() {
   else if(category == 'M'){
       printf("Welcome to Mass Converter! \n");
       printf("Here is a list of conversations to choose from: \n");
-      printf("Enter 1 for ounces to pounds. \n");
-      printf("Enter 2 for gram to pounds. \n");
+      printf("Enter 1 for ounces to Pounds. \n");
+      printf("Enter 2 for gram to Pounds. \n");
+      printf("Enter 3 for Kg to Pounds. \n");
       scanf("%d",&massChoice);
       if(massChoice == 1){
           printf("Please enter the ounce amount: \n");
@@ -94,6 +97,11 @@ int main() {
           gramsToPounds = userinputGram * 0.00220462;
           printf("Pounds: %.2f",gramsToPounds);
       }
+      else if (massChoice == 3) {
+          printf("Please enter the Kg amount: \n");
+          scanf("%f",&userinputKg);
+          KgToPounds = userinputKg * 2.2046;
+          printf("Pounds: %.2f",KgToPounds);
       
    }
   return 0;
