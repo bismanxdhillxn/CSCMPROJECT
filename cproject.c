@@ -10,6 +10,7 @@ int main() {
   int userinputUSDtoEuro; // User inputted for USD to EURO;
   int userinputUSDtoJPY; // User inputted for USD to JPY;
   int userinputUSDtoRMB; // User inputted for USD to RMB;
+  int userinputINRtoUSD; // User inputted for INR to USD;
   int userinputOunce; // User inputted for Ounce;
   int userinputGram; // User inputted for Gram;
   float userinputKg; // User inputted for Kg;
@@ -19,6 +20,7 @@ int main() {
   float USDtoEURO ; // varaible that stores the converted USD->EURO;
   float USDtoJPY; // stores the converted USD->JPY;
   float USDtoRMB; // stores the converted USD->RMB;
+  float INRtoUSD; // stores the converted INR->USD;
   float ounceToPounds; // stores the converted Ounce->Pounds;
   float gramsToPounds; // stores the converted Grams->Pounds;
   float KgToPounds; // stores the converted Kg->Pounds;
@@ -63,6 +65,7 @@ int main() {
       printf("Enter 1 for USD to Euro. \n");
       printf("Enter 2 for USD to JPY. \n");
       printf("Enter 3 for USD to RMB. \n");
+      printf("Enter 4 for INR to USD. \n");
       scanf("%d",&currencyChoice);
       if(currencyChoice == 1){
           printf("Please enter the USD amount: \n");
@@ -82,6 +85,12 @@ int main() {
         USDtoRMB = userinputUSDtoRMB * 6.82;
         printf("RMB: %.2f",USDtoRMB);
       }
+      else if(currencyChoice == 4) {
+        printf("Please enter the INR amount: \n");
+        scanf("%d",&userinputINRtoUSD);
+        INRtoUSD = userinputINRtoUSD / 82.53;
+        printf("USD: %.2f",INRtoUSD);
+        
       else
         printf("Please enter correct choice. \n");
    }
