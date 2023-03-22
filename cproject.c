@@ -109,7 +109,11 @@ int main() {
           scanf("%f",&userinputKg);
           KgToPounds = userinputKg * 2.2046;
           printf("Pounds: %.2f",KgToPounds);
+        
       
    }
+    else
+      printf("please enter the correct choice");
+  }
   return 0;
 }
