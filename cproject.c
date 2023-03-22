@@ -15,6 +15,7 @@ int main() {
   float userinputKg; // User inputted for Kg;
   int fahrenheitToCelsius; // variable that stores the converted F->C;
   int celsiusToFahrenheit; // variable that stores the converted C->F;
+  int celsiusToKelvin; // variable that stores the converted C->K;
   float USDtoEURO ; // varaible that stores the converted USD->EURO;
   float USDtoJPY; // stores the converted USD->JPY;
   float USDtoRMB; // stores the converted USD->RMB;
@@ -33,6 +34,7 @@ int main() {
       printf("Here is a list of conversations to choose from: \n");
       printf("Enter 1 for Fahrenheit to Celsius. \n");
       printf("Enter 2 for Celsius to Fahrenheit. \n");
+      printf("Enter 3 for Celsius to Kelvin. \n");
       scanf("%d",&tempChoice);
       if(tempChoice == 1){
           printf("Please enter the Fahrenheit degree: \n");
@@ -46,6 +48,11 @@ int main() {
         celsiusToFahrenheit = ((9.0/5.0)*userinputC + 32);
         printf("Fahrenheit: %d",celsiusToFahrenheit);
       }
+      else if(tempChoice == 3){
+        printf("Please enter the Celsius degree: \n");
+        scanf("%d",&userinputC);
+        celsiusToKelvin = userinputC+273;
+        printf("Kelvin: %d",celsiusToKelvin);
       else
         printf("Please enter the correct choice. \n");
   }
