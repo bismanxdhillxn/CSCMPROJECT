@@ -114,7 +114,7 @@ int main() {
           printf("Pounds: %.2f",gramsToPounds);
       }
       else if (massChoice == 3) {
-          printf("Please enter the Kg amount: \n");
+          printf("Please enter THE Kg amount: \n");
           scanf("%f",&userinputKg);
           KgToPounds = userinputKg * 2.2046;
           printf("Pounds: %.2f",KgToPounds);
@@ -124,5 +124,6 @@ int main() {
     else
       printf("please enter the correct choice");
   }
+    return 0;
 
 }
