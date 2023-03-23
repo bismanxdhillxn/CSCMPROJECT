@@ -124,5 +124,6 @@ int main() {
     else
       printf("please enter the correct choice");
   }
+    return 0;
 
 }
