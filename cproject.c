@@ -25,7 +25,9 @@ int main() {
   float gramsToPounds; // stores the converted Grams->Pounds;
   float KgToPounds; // stores the converted Kg->Pounds;
   
+  printf("this is our SCM project");
   printf("Welcome to Unit Converter! \n");
+  printf("U WILL BE ABLE TO CONVERT FROM ONE UNIT TO ANOTHER OF MASS CURRENCY AND TEMPERATURE");
   printf("Here is a list of conversation to choose from: \n");
   printf("Temperature(T),Currency(C),Mass(M) \n");
   printf("Please enter the letter you want to convert.\n");
