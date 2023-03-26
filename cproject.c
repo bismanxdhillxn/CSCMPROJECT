@@ -39,6 +39,7 @@ int main() {
       printf("Enter 1 for Fahrenheit to Celsius. \n");
       printf("Enter 2 for Celsius to Fahrenheit. \n");
       printf("Enter 3 for Celsius to Kelvin. \n");
+      printf("ENTER 4 for exiting the temperature converter");
       scanf("%d",&tempChoice);
       if(tempChoice == 1){
           printf("Please enter the Fahrenheit degree: \n");
@@ -50,15 +51,18 @@ int main() {
         printf("Please enter the Celsius degree: \n");
         scanf("%d",&userinputC);
         celsiusToFahrenheit = ((9.0/5.0)*userinputC + 32);
+        printf("your converted temperature is:");
         printf("Fahrenheit: %d",celsiusToFahrenheit);
       }
       else if(tempChoice == 3){
         printf("Please enter the Celsius degree: \n");
         scanf("%d",&userinputC);
         celsiusToKelvin = userinputC+273;
+        printf("your converted temperature is:");
         printf("Kelvin: %d",celsiusToKelvin);
       else
         printf("Please enter the correct choice. \n");
+        printf("please enter the choices from 1 to 3");
   }
   
   else if(category == 'C') {
