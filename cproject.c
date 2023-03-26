@@ -106,29 +106,34 @@ int main() {
       printf("Enter 1 for ounces to Pounds. \n");
       printf("Enter 2 for gram to Pounds. \n");
       printf("Enter 3 for Kg to Pounds. \n");
+     printf("enter 4 to exit mass converter.\n");
       scanf("%d",&massChoice);
       if(massChoice == 1){
           printf("Please enter the ounce amount: \n");
           scanf("%d",&userinputOunce);
           ounceToPounds = userinputOunce * 0.0625;
+         printf("your converted mass is ");
           printf("Pounds: %.2f",ounceToPounds);
       }
       else if(massChoice == 2) {
           printf("Please enter the gram amount: \n");
           scanf("%d",&userinputGram);
           gramsToPounds = userinputGram * 0.00220462;
+        printf("your converted mass is ");
           printf("Pounds: %.2f",gramsToPounds);
       }
       else if (massChoice == 3) {
           printf("Please enter the Kg amount: \n");
           scanf("%f",&userinputKg);
           KgToPounds = userinputKg * 2.2046;
+        printf("your converted mass is ");
           printf("Pounds: %.2f",KgToPounds);
         
       
    }
     else
       printf("please enter the correct choice");
+     printf("PLEASE ENTER CHOICES BETWEEN 1 -3 FOR MASS CURRENCY AND TEMPERATURE CONVERTER");
   }
     return 0;
 
